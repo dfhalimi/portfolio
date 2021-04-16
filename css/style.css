@@ -194,7 +194,7 @@ header ul #menu-close {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px 0;
+  padding: 100px 0;
   background-color: #313131;
 }
 
@@ -203,8 +203,8 @@ header ul #menu-close {
 }
 
 #about .about-content {
-  width: 60%;
-  height: 450px;
+  width: 90%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,8 +212,9 @@ header ul #menu-close {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 100px 0;
 }
 
@@ -233,6 +234,7 @@ header ul #menu-close {
           align-items: center;
   background-color: #f3f3f3;
   border-radius: 5px;
+  margin-left: 50px;
 }
 
 #about .about-content .about-skills img {
@@ -295,6 +297,37 @@ header ul #menu-close {
   font-size: 1.1em;
   color: #7e7e7e;
   line-height: 1.5em;
+}
+
+@media screen and (max-width: 950px) {
+  #about {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #about h1 {
+    margin: 0;
+  }
+  #about .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+  }
+  #about .about-content .about-skills {
+    width: 90%;
+    margin: 30px 0;
+  }
+  #about .about-content .about-skills img {
+    width: 150px;
+    margin-top: 10px;
+  }
+  #about .about-content .about-text {
+    width: 90%;
+  }
 }
 
 #projects {

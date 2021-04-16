@@ -1,17 +1,17 @@
 #about {
   flex-direction: column;
   justify-content: center;
-  margin: 100px 0;
+  padding: 100px 0;
   background-color: $grey;
   h1 {
     color: rgb(243, 243, 243);
   }
   .about-content {
-    width: 60%;
-    height: 450px;
+    width: 90%;
+    height: auto;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: center;
     margin: 100px 0;
     .about-skills {
       width: 400px;
@@ -21,6 +21,7 @@
       align-items: center;
       background-color: rgb(243, 243, 243);
       border-radius: 5px;
+      margin-left: 50px;
       img {
         width: 45%;
         border-radius: 50%;
@@ -61,6 +62,31 @@
         font-size: 1.1em;
         color: rgb(126, 126, 126);
         line-height: 1.5em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #about {
+    justify-content: space-around;
+    h1 {
+      margin: 0;
+    }
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      width: 70%;
+      .about-skills {
+        width: 90%;
+        margin: 30px 0;
+        img {
+          width: 150px;
+          margin-top: 10px;
+        }
+      }
+      .about-text {
+        width: 90%;
       }
     }
   }
