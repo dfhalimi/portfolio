@@ -1,0 +1,194 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  margin-bottom: 50px;
+  .projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    .project {
+      margin: 35px;
+      height: 309px;
+      width: 500px;
+      background-color: #fff;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      position: relative;
+      cursor: pointer;
+      h3 {
+        text-align: center;
+        color: $grey;
+      }
+      .project-img {
+        position: relative;
+        img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          z-index: 1;
+        }
+        &::after {
+          transition: 0.2s ease-out;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 98.7%;
+          width: 100%;
+          z-index: 2;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          color: #fff;
+          font-weight: 500;
+          text-align: center;
+          padding-top: 45%;
+        }
+        &:hover::after {
+          background-color: rgba(0, 0, 0, 0.3);
+          content: "Zum Projekt";
+          padding-top: 30%;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .project-info {
+    position: fixed;
+    top: 250px;
+    left: auto;
+    right: auto;
+    width: 1300px;
+    height: auto;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    transition: 0.2s ease-out;
+    visibility: hidden;
+    transform: scale(0);
+    z-index: 5;
+    .project-info-img {
+      width: 600px;
+      margin-right: 20px;
+      img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.1);
+      }
+      .project-links {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .btn {
+          margin-right: 10px;
+        }
+      }
+    }
+    .project-text {
+      border: 1px solid white;
+      width: 600px;
+      padding: 15px;
+      position: relative;
+      hr {
+        border: none;
+        border-top: 1px solid $mint;
+      }
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        margin-top: 40px;
+      }
+      p {
+        span {
+          font-size: 0.9em;
+          margin-right: 10px;
+          border: 1px solid $mint;
+          padding: 5px;
+        }
+      }
+    }
+    #close {
+      position: fixed;
+      top: 5px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+  .project-info.visible {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  #projects {
+    .project-info {
+      width: 60%;
+      top: 50px;
+      flex-wrap: wrap;
+      .project-info-img {
+        width: 90%;
+        margin: 0 0 20px 0;
+        img {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .project-links {
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .project-text {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #projects {
+    .project-info {
+      width: 80%;
+      .project-text {
+        p {
+          display: flex;
+          flex-wrap: wrap;
+          span {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #projects {
+    padding: 0;
+    .projects {
+      .project {
+        //transform: scale(0.8);
+        height: 247px;
+        width: 400px;
+        margin: 35px 0;
+        .project-img {
+          img {
+            height: 200px;
+          }
+        }
+      }
+    }
+    .project-info {
+      width: 90%;
+    }
+  }
+}

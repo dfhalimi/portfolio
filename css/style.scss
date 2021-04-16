@@ -1,0 +1,90 @@
+@import "./variables";
+@import "./header";
+@import "./home";
+@import "./about";
+@import "./projects";
+@import "./contact";
+@import "./footer";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: $mint;
+}
+
+::selection {
+  color: #fff;
+  background-color: $mint;
+}
+
+body {
+  margin: 0;
+  color: $grey;
+  background-color: #fff;
+  font-family: "Titilium Web", sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.section-header {
+  font-size: 60px;
+  color: $grey;
+  border-bottom: 10px solid $mint;
+}
+
+.color-punch {
+  color: $mint;
+}
+
+.btn {
+  border: 1px solid $mint;
+  padding: 10px;
+  font-size: 1.1em;
+  transition: 0.15s ease-in-out;
+  &:hover {
+    background-color: $mint;
+  }
+}
+
+.go-back {
+  position: fixed;
+  bottom: 80px;
+  right: 5%;
+  background-color: $mint;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+  i {
+    font-size: 22px;
+    color: #fff;
+  }
+}

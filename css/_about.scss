@@ -1,0 +1,67 @@
+#about {
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px 0;
+  background-color: $grey;
+  h1 {
+    color: rgb(243, 243, 243);
+  }
+  .about-content {
+    width: 60%;
+    height: 450px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 100px 0;
+    .about-skills {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(243, 243, 243);
+      border-radius: 5px;
+      img {
+        width: 45%;
+        border-radius: 50%;
+        border: 5px solid $mint;
+      }
+      h3 {
+        padding-bottom: 10px;
+        border-bottom: 3px solid $mint;
+      }
+      p {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        span {
+          margin: 5px;
+          padding: 5px;
+          border: 1px solid $mint;
+          color: rgb(126, 126, 126);
+        }
+      }
+    }
+    .about-text {
+      width: 600px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 15px;
+      background-color: rgb(243, 243, 243);
+      border-radius: 5px;
+      h3 {
+        font-size: 30px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid rgba(48, 216, 188, 0.4);
+      }
+      p {
+        font-size: 1.1em;
+        color: rgb(126, 126, 126);
+        line-height: 1.5em;
+      }
+    }
+  }
+}

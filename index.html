@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <title>Deniz Halimi - Portfolio</title>
+  </head>
+  <body>
+    <main>
+      <!-- Header -->
+      <header>
+        <div class="logo">
+          <a href="#home">
+            <h2>DENIZ <span class="color-punch">HALIMI</span></h2></a
+          >
+        </div>
+        <nav>
+          <i class="fas fa-bars" id="menu-open" onclick="openMenu()"></i>
+          <ul id="nav-menu">
+            <li id="menu-close" onclick="closeMenu()">X</li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Home -->
+      <section id="home">
+        <h1>
+          HI, <span class="color-punch">MEIN</span> NAME IST DENIZ,<br />ICH BIN
+          <span class="color-punch">WEB DEVELOPER</span>.
+        </h1>
+        <i
+          class="fas fa-chevron-down"
+          onclick="window.location.href='#about'"
+        ></i>
+      </section>
+      <!-- About -->
+      <section id="about">
+          <h1 class="section-header">About</h1>
+          <div class="about-content">
+            <div class="about-skills">
+              <img src="images/about-image.jpg" alt="Me, myself and I">
+              <h3>Skills</h3>
+              <p><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SCSS</span><span>React.js</span><span>React Router</span><span>Git</span><span>GitHub</span></p>
+            </div>
+            <div class="about-text">
+              <h3>Wer ich bin</h3>
+              <p>
+                Hi, mein Name ist Deniz Halimi, und ich bin Web Developer. <br>  
+                Seit der ersten Zeile Code, hat mich die Leidenschaft für das Programmieren gepackt und nicht wieder losgelassen. <br>
+                Ich suche stets die Herausforderung und arbeite jeden Tag an meinen Fähigkeiten, um die möglichst beste Arbeit leisten zu können.
+              </p>
+              <p>
+                Zudem lerne ich sehr schnell neue Technologien und bin in der Lage mich jeder Situation anzupassen. <br>
+                Hier drunter gibt es einige meiner Projekte in der Übersicht.
+              </p>
+            </div>
+          </div>
+      </section>
+      <!-- Projects -->
+      <section id="projects">
+        <h1 class="section-header">Projects</h1>
+        <div class="projects">
+          <div class="project" id="project-1" onclick="clickHandle(this.id)">
+            <h3>Portfolio Website</h3>
+            <div class="project-img">
+              <img
+                src="images/portfolio-screenshot.png"
+                alt="Portfolio Website"
+              />
+            </div>
+          </div>
+          <div class="project" id="project-2" onclick="clickHandle(this.id)">
+            <h3>Movie App</h3>
+            <div class="project-img">
+              <img src="images/movie-app-screenshot.jpg" alt="Movie App" />
+            </div>
+          </div>
+          <div class="project" id="project-3" onclick="clickHandle(this.id)">
+            <h3>Space Roamer</h3>
+            <div class="project-img">
+              <img
+                src="images/space-roamer-screenshot.png"
+                alt="Space Roamer Website"
+              />
+            </div>
+          </div>
+          <div class="project" id="project-4" onclick="clickHandle(this.id)">
+            <h3>Strong Fitness</h3>
+            <div class="project-img">
+              <img
+                src="images/strong-fitness-screenshot.png"
+                alt="Fitness Website"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Project Info -->
+        <div class="project-info" id="project-1-info">
+          <div class="project-info-img">
+            <img
+              src="images/portfolio-screenshot.png"
+              alt="Portfolio Website"
+            />
+            <div class="project-links">
+              <a
+              href="https://github.com/dfhalimi/movie-app"
+              target="_blank"
+              class="btn"
+              >Zum Code</a
+            >
+            <a href="#" class="btn"
+              >Zur Website</a
+            >
+            </div>
+          </div>
+          <div class="project-text">
+            <h2>Portfolio Website</h3>
+            <hr>
+            <h3>Beschreibung</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              consectetur provident quod ab repudiandae hic tempore, quam
+              repellat, corporis sit officia. Quas mollitia architecto ipsum rem
+              aperiam eos provident iusto?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              consectetur provident quod ab repudiandae hic tempore, quam
+              repellat, corporis sit officia. Quas mollitia architecto ipsum rem
+              aperiam eos provident iusto?
+            </p>
+            <h3>Skills</h3>
+            <p><span>HTML5</span><span>CSS3</span><span>SCSS</span><span>JavaScript</span></p>
+          </div>
+          <span id="close" onclick="closeProject()">X</span>
+        </div>
+        <div class="project-info" id="project-2-info">
+          <div class="project-info-img">
+            <img
+              src="images/movie-app-screenshot.jpg"
+              alt="Movie App"
+            />
+            <div class="project-links">
+              <a
+              href="https://github.com/dfhalimi/movie-app"
+              target="_blank"
+              class="btn"
+              >Zum Code</a
+            >
+            <a href="https://www.youtube.com/" target="_blank" class="btn"
+              >Zur Website</a
+            >
+            </div>
+          </div>
+          <div class="project-text">
+            <h2>Movie App</h3>
+            <hr>
+            <h3>Beschreibung</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              consectetur provident quod ab repudiandae hic tempore, quam
+              repellat, corporis sit officia. Quas mollitia architecto ipsum rem
+              aperiam eos provident iusto?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              consectetur provident quod ab repudiandae hic tempore, quam
+              repellat, corporis sit officia. Quas mollitia architecto ipsum rem
+              aperiam eos provident iusto?
+            </p>
+            <h3>Skills</h3>
+            <p><span>HTML5</span><span>CSS3</span><span>React.js</span><span>React Router</span><span>JavaScript</span><span>TMBD API</span></p>
+          </div>
+          <span id="close" onclick="closeProject()">X</span>
+        </div>
+        <div class="project-info" id="project-3-info">
+          <div class="project-info-img">
+            <img
+              src="images/space-roamer-screenshot.png"
+              alt="Space Roamer Website"
+            />
+            <div class="project-links">
+              <a
+              href="https://github.com/dfhalimi/space-roamer"
+              target="_blank"
+              class="btn"
+              >Zum Code</a
+            >
+            <a href="https://www.youtube.com/" target="_blank" class="btn"
+              >Zur Website</a
+            >
+            </div>
+          </div>
+          <div class="project-text">
+            <h2>Space Roamer</h3>
+            <hr>
+            <h3>Beschreibung</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              consectetur provident quod ab repudiandae hic tempore, quam
+              repellat, corporis sit officia. Quas mollitia architecto ipsum rem
+              aperiam eos provident iusto?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              consectetur provident quod ab repudiandae hic tempore, quam
+              repellat, corporis sit officia. Quas mollitia architecto ipsum rem
+              aperiam eos provident iusto?
+            </p>
+            <h3>Skills</h3>
+            <p><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>NASA API</span><span>ESRI API</span></p>
+          </div>
+          <span id="close" onclick="closeProject()">X</span>
+        </div>
+        <div class="project-info" id="project-4-info">
+          <div class="project-info-img">
+            <img
+              src="images/strong-fitness-screenshot.png"
+              alt="Strong Fitness Website"
+            />
+            <div class="project-links">
+              <a
+              href="https://github.com/dfhalimi/strong-fitness"
+              target="_blank"
+              class="btn"
+              >Zum Code</a
+            >
+            <a href="https://www.youtube.com/" target="_blank" class="btn"
+              >Zur Website</a
+            >
+            </div>
+          </div>
+          <div class="project-text">
+            <h2>Strong Fitness</h3>
+            <hr>
+            <h3>Beschreibung</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              consectetur provident quod ab repudiandae hic tempore, quam
+              repellat, corporis sit officia. Quas mollitia architecto ipsum rem
+              aperiam eos provident iusto?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              consectetur provident quod ab repudiandae hic tempore, quam
+              repellat, corporis sit officia. Quas mollitia architecto ipsum rem
+              aperiam eos provident iusto?
+            </p>
+            <h3>Skills</h3>
+            <p><span>HTML5</span><span>CSS3</span><span>SCSS</span><span>JavaScript</span></p>
+          </div>
+          <span id="close" onclick="closeProject()">X</span>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact">
+        <h1 class="section-header">Contact</h1>
+        <div class="contact-container">
+          <p>Bei Interesse oder Fragen bin ich gerne unter den folgenden Methoden erreichbar:</p>
+          <div class="contact-options">
+            <a href="mailto:df.halimi@gmail.com?subject=Mail%20von%20Portfolioseite"><i class="far fa-envelope"></i></a>
+            <a href="https://github.com/dfhalimi" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/deniz-halimi-417691198/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </section>
+      <footer>
+        &copy; Copyright 2021, Deniz Halimi
+      </footer>
+    </main>
+    <div class="go-back" onclick="window.location.href='#home'">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
