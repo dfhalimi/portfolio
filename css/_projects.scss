@@ -58,6 +58,8 @@
     }
   }
   .project-info {
+    max-height: 95vh;
+    overflow-y: scroll;
     position: fixed;
     top: 250px;
     left: auto;
@@ -106,7 +108,8 @@
       h3 {
         margin-top: 40px;
       }
-      p {
+      .skills {
+        margin-bottom: 0;
         span {
           font-size: 0.9em;
           margin-right: 10px;
@@ -133,7 +136,7 @@
   #projects {
     .project-info {
       width: 60%;
-      top: 50px;
+      top: 10px;
       flex-wrap: wrap;
       .project-info-img {
         width: 90%;
@@ -156,10 +159,16 @@
 
 @media screen and (max-width: 1000px) {
   #projects {
+    h2 {
+      margin: 0;
+    }
     .project-info {
       width: 80%;
       .project-text {
-        p {
+        h3 {
+          margin: 15px 0 10px 0;
+        }
+        .skills {
           display: flex;
           flex-wrap: wrap;
           span {
@@ -176,7 +185,6 @@
     padding: 0;
     .projects {
       .project {
-        //transform: scale(0.8);
         height: 247px;
         width: 400px;
         margin: 35px 0;
@@ -189,6 +197,17 @@
     }
     .project-info {
       width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #projects {
+    .projects {
+      .project {
+        height: 216px;
+        width: 350px;
+      }
     }
   }
 }

@@ -72,7 +72,7 @@ ul {
 
 .go-back {
   position: fixed;
-  bottom: 80px;
+  bottom: 60px;
   right: 5%;
   background-color: $mint;
   height: 45px;
@@ -83,6 +83,7 @@ ul {
   align-items: center;
   cursor: pointer;
   display: none;
+  z-index: 2;
   i {
     font-size: 22px;
     color: #fff;

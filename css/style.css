@@ -184,6 +184,18 @@ header ul #menu-close {
   #home h1 {
     font-size: 32px;
   }
+  #home i {
+    bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #home h1 {
+    font-size: 26px;
+  }
+  #home i {
+    font-size: 30px;
+  }
 }
 
 #about {
@@ -414,6 +426,8 @@ header ul #menu-close {
 }
 
 #projects .project-info {
+  max-height: 95vh;
+  overflow-y: scroll;
   position: fixed;
   top: 250px;
   left: auto;
@@ -485,7 +499,11 @@ header ul #menu-close {
   margin-top: 40px;
 }
 
-#projects .project-info .project-text p span {
+#projects .project-info .project-text .skills {
+  margin-bottom: 0;
+}
+
+#projects .project-info .project-text .skills span {
   font-size: 0.9em;
   margin-right: 10px;
   border: 1px solid #30d8bc;
@@ -509,7 +527,7 @@ header ul #menu-close {
 @media screen and (max-width: 1360px) {
   #projects .project-info {
     width: 60%;
-    top: 50px;
+    top: 10px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -535,17 +553,23 @@ header ul #menu-close {
 }
 
 @media screen and (max-width: 1000px) {
+  #projects h2 {
+    margin: 0;
+  }
   #projects .project-info {
     width: 80%;
   }
-  #projects .project-info .project-text p {
+  #projects .project-info .project-text h3 {
+    margin: 15px 0 10px 0;
+  }
+  #projects .project-info .project-text .skills {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #projects .project-info .project-text p span {
+  #projects .project-info .project-text .skills span {
     margin-bottom: 10px;
   }
 }
@@ -564,6 +588,13 @@ header ul #menu-close {
   }
   #projects .project-info {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #projects .projects .project {
+    height: 216px;
+    width: 350px;
   }
 }
 
@@ -708,7 +739,7 @@ ul {
 
 .go-back {
   position: fixed;
-  bottom: 80px;
+  bottom: 60px;
   right: 5%;
   background-color: #30d8bc;
   height: 45px;
@@ -725,6 +756,7 @@ ul {
           align-items: center;
   cursor: pointer;
   display: none;
+  z-index: 2;
 }
 
 .go-back i {

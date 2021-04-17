@@ -52,5 +52,19 @@
     h1 {
       font-size: 32px;
     }
+    i {
+      bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #home {
+    h1 {
+      font-size: 26px;
+    }
+    i {
+      font-size: 30px;
+    }
   }
 }
