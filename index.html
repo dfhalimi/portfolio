@@ -58,7 +58,11 @@
             <div class="about-skills">
               <img src="images/about-image.jpg" alt="Me, myself and I">
               <h3>Skills</h3>
-              <p><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SCSS</span><span>React.js</span><span>React Router</span><span>Git</span><span>GitHub</span></p>
+              <p>
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                <span>SCSS</span><span>React.js</span><span>React Router</span>
+                <span>Git</span><span>GitHub</span><span>PHP</span><span>MySQL</span>
+              </p>
             </div>
             <div class="about-text">
               <h3>Wer ich bin</h3>
@@ -79,6 +83,15 @@
         <h1 class="section-header">Projects</h1>
         <div class="projects">
           <div class="project" id="project-1" onclick="clickHandle(this.id)">
+            <h3>Bloggr</h3>
+            <div class="project-img">
+              <img
+                src="images/Bloggr_Screenshot_1.JPG"
+                alt="Bloogr"
+              />
+            </div>
+          </div>
+          <div class="project" id="project-2" onclick="clickHandle(this.id)">
             <h3>Portfolio Website</h3>
             <div class="project-img">
               <img
@@ -87,13 +100,13 @@
               />
             </div>
           </div>
-          <div class="project" id="project-2" onclick="clickHandle(this.id)">
+          <div class="project" id="project-3" onclick="clickHandle(this.id)">
             <h3>Movie App</h3>
             <div class="project-img">
               <img src="images/movie-app-screenshot.jpg" alt="Movie App" />
             </div>
           </div>
-          <div class="project" id="project-3" onclick="clickHandle(this.id)">
+          <div class="project" id="project-4" onclick="clickHandle(this.id)">
             <h3>Space Roamer</h3>
             <div class="project-img">
               <img
@@ -102,7 +115,7 @@
               />
             </div>
           </div>
-          <div class="project" id="project-4" onclick="clickHandle(this.id)">
+          <div class="project" id="project-5" onclick="clickHandle(this.id)">
             <h3>Strong Fitness</h3>
             <div class="project-img">
               <img
@@ -114,6 +127,40 @@
         </div>
         <!-- Project Info -->
         <div class="project-info" id="project-1-info">
+          <div class="project-info-img">
+            <img
+              src="images/Bloggr_Screenshot_1.JPG"
+              alt="Bloggr"
+            />
+            <div class="project-links">
+              <a
+              href="https://github.com/dfhalimi/bloggr"
+              target="_blank"
+              class="btn"
+              >Zum Code</a
+            >
+            <a href="http://bloggr.infinityfreeapp.com/Bloggr/" target="_blank" class="btn"
+              >Zur Website</a
+            >
+            </div>
+          </div>
+          <div class="project-text">
+            <h2>Bloggr</h3>
+            <hr>
+            <h3>Beschreibung</h3>
+            <p>
+              Bloggr ist eine Seite zum Erstellen, Bearbeiten und Veröffentlichen von Blogartikeln. 
+              Man kann auch die Blogartikel von anderen Nutzern lesen, diese liken und kommentieren.
+            </p>
+            <p>
+              Das Frontend habe ich mit HTML, SCSS und JavaScript erstellt. Im Backend habe ich PHP und MySQL benutzt.
+            </p>
+            <h3>Skills</h3>
+            <p class="skills"><span>HTML5</span><span>SCSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span></p>
+          </div>
+          <span id="close" onclick="closeProject()">X</span>
+        </div>
+        <div class="project-info" id="project-2-info">
           <div class="project-info-img">
             <img
               src="images/portfolio-screenshot.png"
@@ -147,7 +194,7 @@
           </div>
           <span id="close" onclick="closeProject()">X</span>
         </div>
-        <div class="project-info" id="project-2-info">
+        <div class="project-info" id="project-3-info">
           <div class="project-info-img">
             <img
               src="images/movie-app-screenshot.jpg"
@@ -181,7 +228,7 @@
           </div>
           <span id="close" onclick="closeProject()">X</span>
         </div>
-        <div class="project-info" id="project-3-info">
+        <div class="project-info" id="project-4-info">
           <div class="project-info-img">
             <img
               src="images/space-roamer-screenshot.png"
@@ -214,7 +261,7 @@
           </div>
           <span id="close" onclick="closeProject()">X</span>
         </div>
-        <div class="project-info" id="project-4-info">
+        <div class="project-info" id="project-5-info">
           <div class="project-info-img">
             <img
               src="images/strong-fitness-screenshot.png"
